@@ -36,6 +36,6 @@ public class BActivity extends AppCompatActivity {
     public void OnBtnNext() {
         RxBus.getInstance().hasObservers();
 
-        RxBus.getInstance().send(new UserEvent(1,"名字"));
+        RxBus.getInstance().send(new UserEvent(1,"BActivity: Send from BActivity"));
     }
 }
